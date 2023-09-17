@@ -50,14 +50,3 @@ def db_connect():
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
         return conn, error
-
-
-def get_env_value():
-    print(db_host)
-    print(db_name)
-    print(db_user)
-    print(db_port)
-    message = db_host + db_name + db_user + db_port
-    print(message)
-    return None, message
-
