@@ -1,0 +1,24 @@
+parameters: {}
+environment:
+  DB_USER: "${db_username}"
+  DB_PASS: "${db_password}"
+  DB_HOST: "${db_host}"
+  DB_PORT: "${db_port}"
+  DB_NAME: "${db_database}"
+packages:
+    - name: sample
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: hello
+          binary: false
+          main: ""
+          runtime: python:default
+          web: true
+          webSecure: false
+          parameters: {}
+          environment: {}
+          annotations: {}
+          limits: {}
